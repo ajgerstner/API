@@ -1,0 +1,120 @@
+.MovieDetails li, h1, .movieSearch {
+  float: left; }
+
+html {
+  /*Makes 1 rem equl to 10px*/
+  font-size: 62.5%; }
+
+body {
+  font: 1.6rem/1.25 Arial, sans-serif;
+  color: #ffffff; }
+
+.wrapper, article {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto; }
+
+h2 {
+  padding: 5px;
+  font-size: 1.5rem;
+  margin: 0;
+  color: orange; }
+
+h3 {
+  font-size: 1rem;
+  padding: 5px; }
+
+.MovieDetails li {
+  display: block;
+  color: white;
+  list-style: none;
+  width: calc(100%);
+  height: 45rem;
+  margin-left: 0rem;
+  margin-right: 2rem;
+  margin-bottom: 0rem;
+  margin-top: 2rem;
+  width: 25rem;
+  background-color: #444444; }
+  .MovieDetails li img {
+    width: 25rem;
+    height: 35rem; }
+
+h1 {
+  margin-top: 10px;
+  margin-bottom: 0; }
+
+nav li {
+  display: inline-block;
+  float: right;
+  margin-left: 5px;
+  margin-right: 20px;
+  margin-top: 20px; }
+
+nav a {
+  color: inherit;
+  text-decoration: none; }
+  nav a:hover {
+    color: orange; }
+
+.movieSearch {
+  clear: both;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-top: 15rem;
+  position: relative;
+  left: 35%; }
+
+#searchInput {
+  margin: 0;
+  width: 35rem;
+  height: 3rem;
+  background-color: lightgray;
+  border-style: none; }
+
+.SearchP {
+  margin: 0;
+  background-color: #444444;
+  color: white;
+  width: 25rem; }
+
+header {
+  background: url(../search-assets/concert-photo.jpg) center;
+  background-size: 100%;
+  height: 30rem; }
+
+.button {
+  background: url(../search-assets/search.png);
+  height: 3rem;
+  width: 3rem;
+  background-size: 100%;
+  float: right;
+  background-color: lightgray; }
+
+p {
+  color: black; }
+
+.MovieDiv {
+  overflow: auto; }
+
+#ResultsTitle {
+  width: 50rem;
+  clear: both;
+  background-color: #444444;
+  color: white;
+  padding: 1rem; }
+
+footer {
+  clear: both;
+  overflow: auto;
+  background-color: #444444;
+  height: 10rem;
+  margin-top: 5rem; }
+  footer h2 {
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 3.5rem;
+    margin-top: 3.5rem;
+    color: white; }
