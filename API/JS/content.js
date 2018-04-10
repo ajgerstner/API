@@ -29,7 +29,7 @@ for( var i = 0; i < responseObject.results.length; i++)
         
               apiData +='<li>';
              if(responseObject.results[i].poster_path === null){
-                 apiData +='<img src="../API/search-assets/concert-photo.jpg">';
+                 apiData +='<img src="/search-assets/concert-photo.jpg">';
              } else{
               apiData +='<img src="https://image.tmdb.org/t/p/w300'+responseObject.results[i].poster_path+'">';}
              apiData +='<h2>Title: '+responseObject.results[i].original_title+'</h2>';
