@@ -2,24 +2,6 @@
 
 
 
-$test : black;
-$LigthText: white;
-$Dgray:#444444;
-$primaryFont:Arial, sans-serif;
-$FS1_5:1.5rem;
-
-@mixin br($top, $right, $bottom, $left ) {
-  
-   margin-left: $left;
-   margin-right: $right;
-   margin-bottom: $bottom;
-   margin-top: $top;
-  }
-
-%FloatLeft{
-float: left;
-}
-
 html {
 	//Makes 1 rem equl to 10px
     
@@ -32,6 +14,9 @@ body{
     
     
 }
+
+
+
 .wrapper, article
 
 {
@@ -39,6 +24,7 @@ body{
      max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    
 }
 
   h2{
@@ -54,31 +40,26 @@ h3{
     font-size: 1rem;
     padding: 5px;
 }
-.MovieDetails{
-    
-    //background-color: $Dgray;
 
- 
-  li{
-        display:block;
-  
-     color: $LigthText;
-   list-style: none;
-    width: calc(100%);
-    height: 45rem;
-      @extend %FloatLeft;
-    
-     @include br (2rem,2rem,0rem,0rem);
-    
-      width: 25rem;
-      background-color: $Dgray;
-      img{
+
+.MovieDetails{
+    padding: 0;
+  // margin: 0;
+    display:flex;
+    flex-wrap: wrap;
+   justify-content: space-between;
+    li{
+         background-color: $Dgray;
+        margin: 1em;
+        width: 25rem;
+          img{
           width: 25rem;
           height: 35rem;
       }
-    
+    }
+   
 }
-}
+
 
 
 h1{
@@ -152,24 +133,22 @@ p{
 }
 
 
-.MovieDiv{
-overflow: auto;
-   // border: 2rem solid black;
-   
-}
 
 #ResultsTitle{
+   
   width:50rem;
-    clear: both;
+ 
     background-color: $Dgray;
     color:$LigthText;
     padding: 1rem;
+    
+  
 }
 
 footer{
   
-   // float:left;
-    clear: both;
+
+  //  clear: both;
    overflow: auto;
     background-color: $Dgray;
  
