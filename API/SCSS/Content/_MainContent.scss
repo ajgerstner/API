@@ -1,4 +1,4 @@
-//cd ajgerstner.bitbucket.io/api
+//cd ajgerstner.gethub.io/api
 
 
 
@@ -93,6 +93,7 @@ nav{
    position: relative;
     left: 35%;
     
+    
 }
 
 #searchInput{
@@ -160,4 +161,36 @@ footer{
         color: $LigthText;
       
     }
+}
+
+
+//create media query for menu and layouts
+@media (max-width:600px){
+  
+    header{
+        height: 20rem;
+    }
+     .movieSearch{
+       left: 2.5%;  
+         margin-top: 5rem;
+    }
+    p{
+        font-size: 70%;
+    }
+    h2{
+        font-size: 70%;
+    }
+    #searchInput{
+        width:22rem;
+    }
+}
+    
+
+
+@media (max-width:800px){
+    
+    .movieSearch{
+       left: 15%;  
+    }
+    
 }

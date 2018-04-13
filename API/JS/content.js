@@ -24,7 +24,7 @@ var apiData='';
       
          apiData +='<p id="ResultsTitle" >Results for '+search.value+'</p>';
          apiData +='<ul class="MovieDetails">';
-         //<div class="MovieDiv">';
+        
 for( var i = 0; i < responseObject.results.length; i++)
          {
     
@@ -41,7 +41,7 @@ for( var i = 0; i < responseObject.results.length; i++)
             
          }
  apiData +='</ul>';
-         //</div>
+        
 if(document.getElementById('results')){
          //update the page with the new content
          var listUpdated = document.getElementById('results');

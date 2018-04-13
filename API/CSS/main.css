@@ -114,3 +114,20 @@ footer {
     margin-bottom: 3.5rem;
     margin-top: 3.5rem;
     color: white; }
+
+@media (max-width: 600px) {
+  header {
+    height: 20rem; }
+  .movieSearch {
+    left: 2.5%;
+    margin-top: 5rem; }
+  p {
+    font-size: 70%; }
+  h2 {
+    font-size: 70%; }
+  #searchInput {
+    width: 22rem; } }
+
+@media (max-width: 800px) {
+  .movieSearch {
+    left: 15%; } }
