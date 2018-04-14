@@ -47,7 +47,7 @@ h3{
   // margin: 0;
     display:flex;
     flex-wrap: wrap;
-   justify-content: space-between;
+   justify-content: center;
     li{
          background-color: $Dgray;
         margin: 1em;
@@ -87,12 +87,14 @@ nav{
 }
 
 .movieSearch{
-     @extend %FloatLeft;
+     //@extend %FloatLeft;
     clear:both;
-   @include br (15rem,0,0,0);
-   position: relative;
-    left: 35%;
-    
+  // @include br (15rem,0,0,0);
+  // position: relative;
+  //  left: 35%;
+    display:flex;
+    justify-content: center;
+    padding-top: 15rem;
     
 }
 
@@ -137,7 +139,7 @@ p{
 
 #ResultsTitle{
    
-  width:50rem;
+  width:75%;
  
     background-color: $Dgray;
     color:$LigthText;
@@ -164,33 +166,83 @@ footer{
 }
 
 
+
+#MenuTrigger{
+    display:none;
+}
+
 //create media query for menu and layouts
-@media (max-width:600px){
+
+    
+
+
+@media screen and (max-width:800px){
+    
+    //.movieSearch{
+      // left: 15%;  
+//    }
+    
+}
+
+@media screen and (max-width:600px){
   
     header{
         height: 20rem;
     }
      .movieSearch{
-       left: 2.5%;  
-         margin-top: 5rem;
+     //  left: 10%;  
+      //   margin-top: .5rem;
+        padding-top: 10rem;
+        
     }
-    p{
-        font-size: 70%;
+   
+    #ResultsTitle{
+        width: 95%;
     }
+    
     h2{
         font-size: 70%;
     }
+    
     #searchInput{
         width:22rem;
     }
-}
     
-
-
-@media (max-width:800px){
     
-    .movieSearch{
-       left: 15%;  
+      #MenuTrigger{
+         
+         display: block;
+         float: right;
+         
+        
+        }
+    
+    #NavMenu{ display: none;
+        clear:both;
+      
+        li{
+            float:none;
+            display:block;
+            background-color: black;
+            margin: 0 auto;
+            padding-top: .5rem;
+            padding-bottom: .5rem;
+            
+        
+        }
+       
     }
+    
+    
+    #Logo{
+        display: none;
+       //  float: none;
+        //justify-content: center;
+        //padding-top: 1em;
+      
+    }
+    
+   
+        
     
 }

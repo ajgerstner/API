@@ -4,10 +4,16 @@
 
 var search;
 
+//var to get the stored data
+var t=localStorage.getItem("searchEntered");
+
+
 //First you must create XMLHttpRequest object
 var xhr = new XMLHttpRequest();
 
 //when the response has loaded the function will run
+
+
 
 xhr.onload = function () {
    
@@ -42,31 +48,38 @@ for( var i = 0; i < responseObject.results.length; i++)
          }
  apiData +='</ul>';
         
-if(document.getElementById('results')){
+         if(document.getElementById('results')){
          //update the page with the new content
-         var listUpdated = document.getElementById('results');
-        listUpdated.innerHTML = apiData;
-         } 
-     }
-     };
+      var listUpdated = document.getElementById('results');
+      listUpdated.innerHTML = apiData;
+      localStorage.setItem("searchEntered",apiData);
+        } }};
+ 
+
 
 //search event listeners
 document.getElementById("searchInput").addEventListener("search", SearchFunction);
 document.getElementById("button").addEventListener("click",SearchFunction);
 
+
 //function to input search text
 function SearchFunction() {
     document.clear();
+ 
     search = document.getElementById("searchInput");
+
     //prepare the request 
     event.preventDefault();
+    
 xhr.open ('GET','https://api.themoviedb.org/3/search/movie?api_key=01b7287a4e8d89aa13eac1e37af27329&language=en-US&query='+search.value,true);
 //send the request
 xhr.send(null); // no data needs to be sent to server
-    }
+   }
 
 
 
+//displaying stored data 
 
-
-
+     var listUpdated = document.getElementById('results');
+      listUpdated.innerHTML = t;  
+   

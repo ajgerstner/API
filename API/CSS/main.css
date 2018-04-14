@@ -1,4 +1,4 @@
-h1, .movieSearch {
+h1 {
   float: left; }
 
 html {
@@ -30,9 +30,9 @@ h3 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
   .MovieDetails li {
     background-color: #444444;
     margin: 1em;
@@ -60,12 +60,13 @@ nav a {
 
 .movieSearch {
   clear: both;
-  margin-left: 0;
-  margin-right: 0;
-  margin-bottom: 0;
-  margin-top: 15rem;
-  position: relative;
-  left: 35%; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 15rem; }
 
 #searchInput {
   margin: 0;
@@ -97,7 +98,7 @@ p {
   color: black; }
 
 #ResultsTitle {
-  width: 50rem;
+  width: 75%;
   background-color: #444444;
   color: white;
   padding: 1rem; }
@@ -115,19 +116,32 @@ footer {
     margin-top: 3.5rem;
     color: white; }
 
-@media (max-width: 600px) {
+#MenuTrigger {
+  display: none; }
+
+@media screen and (max-width: 600px) {
   header {
     height: 20rem; }
   .movieSearch {
-    left: 2.5%;
-    margin-top: 5rem; }
-  p {
-    font-size: 70%; }
+    padding-top: 10rem; }
+  #ResultsTitle {
+    width: 95%; }
   h2 {
     font-size: 70%; }
   #searchInput {
-    width: 22rem; } }
-
-@media (max-width: 800px) {
-  .movieSearch {
-    left: 15%; } }
+    width: 22rem; }
+  #MenuTrigger {
+    display: block;
+    float: right; }
+  #NavMenu {
+    display: none;
+    clear: both; }
+    #NavMenu li {
+      float: none;
+      display: block;
+      background-color: black;
+      margin: 0 auto;
+      padding-top: .5rem;
+      padding-bottom: .5rem; }
+  #Logo {
+    display: none; } }

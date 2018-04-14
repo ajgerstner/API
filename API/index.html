@@ -12,7 +12,8 @@
 	<header >
         <section class="wrapper">
         <h1 id="Logo" ><img src="../API/search-assets/turntable.png" alt="">Movie Search</h1>
-	    <nav>
+        <span id="MenuTrigger"><img src="../API/responsive-assets/hamburger.png" alt=""></span>
+	    <nav id="NavMenu">
             <ul>
                 <li> <a href="#">Contact</a> </li>
                 <li> <a href="#">About</a> </li>
@@ -20,13 +21,13 @@
             </ul>
        
         </nav>
-   
-       <form class="movieSearch"> 
+   <div class="movieSearch">
+       <form > 
         <p class="SearchP">Search for your favorite Movie</p>
          <input type="search" placeholder="Search Movie Title.." id="searchInput">
           <button type="submit" id="button" class="button"></button>        
        </form>
-        
+        </div>
 	    </section > 
 	</header>
 
@@ -42,6 +43,9 @@
 		</footer>
 		
 		<script src="../API/JS/content.js"></script>
+		<script src="../API/JS/menu.js"></script>
+        <script src="../API/JS/event.js"></script>
+		
 	</body>
 	
 </html>
