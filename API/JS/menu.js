@@ -1,13 +1,17 @@
-//jQuery(document).ready(function(){
+
+var x = document.getElementById("MenuTrigger");
+var b= document.getElementById("TopNavMenu");  
+
+x.addEventListener("click",function(){
     
-  //  jQuery("#MenuTrigger").click(function(){
-  //      jQuery("#NavMenu").slideToggle();
-  //  });
-//});
-//document.getElementById("MenuTrigger").addEventListener("click",function(){
-                                                        
- // var x=document.getElementById("NavMenu");
- // x.
-
-
-//});
+    if(document.getElementById("Hamberg")){
+    x.innerHTML='<img src="../API/responsive-assets/close.png" alt="" id="Close">';
+       
+     b.className += " responsive";
+        
+        
+    } else if (document.getElementById("Close")){
+         x.innerHTML='<img src="../API/responsive-assets/hamburger.png" alt="" id="Hamberg">';
+         b.className = "NavMenu";
+    }
+});

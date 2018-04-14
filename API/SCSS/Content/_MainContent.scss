@@ -67,7 +67,8 @@ h1{
    margin-top: 10px;
     margin-bottom: 0;
 }
-nav{
+.NavMenu{
+  
     li{
         display: inline-block;
         float: right;
@@ -86,6 +87,11 @@ nav{
     }
 }
 
+//.NavMenu{
+  //  li:first-child{
+    //    display: none;
+    //}
+//}
 .movieSearch{
      //@extend %FloatLeft;
     clear:both;
@@ -95,7 +101,7 @@ nav{
     display:flex;
     justify-content: center;
     padding-top: 15rem;
-    
+   
 }
 
 #searchInput{
@@ -192,7 +198,7 @@ footer{
      .movieSearch{
      //  left: 10%;  
       //   margin-top: .5rem;
-        padding-top: 10rem;
+        padding-top: 5rem;
         
     }
    
@@ -213,27 +219,36 @@ footer{
          
          display: block;
          float: right;
-         
-        
+         clear: both;
+         background-color: black;
+      
         }
     
-    #NavMenu{ display: none;
-        clear:both;
+     .NavMenu.responsive{ 
+      // display: none;
+       //clear:both;
+       margin: 0 auto;
+      
       
         li{
+          
             float:none;
             display:block;
             background-color: black;
             margin: 0 auto;
-            padding-top: .5rem;
-            padding-bottom: .5rem;
-            
+            //padding-top: 1rem;
+            padding-bottom: 2rem;
+            text-align: right;
+            width: 100%;
         
         }
        
-    }
+    }  
     
-    
+     .NavMenu.responsive{ 
+      margin: 0 auto;
+   li:nth-of-type(1n) {display: block;}
+   }
     #Logo{
         display: none;
        //  float: none;
@@ -241,8 +256,36 @@ footer{
         //padding-top: 1em;
       
     }
-    
    
-        
+}
+
+@media screen and (max-width:600px){
     
+    
+  /*  .NavMenu{ 
+      // display: none;
+       //clear:both;
+       margin: 0 auto;
+      
+      
+        li{
+          
+            float:none;
+            display:block;
+            background-color: black;
+            margin: 0 auto;
+            //padding-top: 1rem;
+            padding-bottom: 2rem;
+            text-align: right;
+            width: 100%;
+        
+        }
+       
+    } 
+    */
+    
+    .NavMenu{ 
+      margin: 0 auto;
+   li:nth-of-type(1n) {display: none;}
+   }
 }

@@ -45,17 +45,17 @@ h1 {
   margin-top: 10px;
   margin-bottom: 0; }
 
-nav li {
+.NavMenu li {
   display: inline-block;
   float: right;
   margin-left: 5px;
   margin-right: 20px;
   margin-top: 20px; }
 
-nav a {
+.NavMenu a {
   color: inherit;
   text-decoration: none; }
-  nav a:hover {
+  .NavMenu a:hover {
     color: orange; }
 
 .movieSearch {
@@ -123,7 +123,7 @@ footer {
   header {
     height: 20rem; }
   .movieSearch {
-    padding-top: 10rem; }
+    padding-top: 5rem; }
   #ResultsTitle {
     width: 95%; }
   h2 {
@@ -132,16 +132,49 @@ footer {
     width: 22rem; }
   #MenuTrigger {
     display: block;
-    float: right; }
-  #NavMenu {
-    display: none;
-    clear: both; }
-    #NavMenu li {
+    float: right;
+    clear: both;
+    background-color: black; }
+  .NavMenu.responsive {
+    margin: 0 auto; }
+    .NavMenu.responsive li {
       float: none;
       display: block;
       background-color: black;
       margin: 0 auto;
-      padding-top: .5rem;
-      padding-bottom: .5rem; }
+      padding-bottom: 2rem;
+      text-align: right;
+      width: 100%; }
+  .NavMenu.responsive {
+    margin: 0 auto; }
+    .NavMenu.responsive li:nth-of-type(1n) {
+      display: block; }
   #Logo {
     display: none; } }
+
+@media screen and (max-width: 600px) {
+  /*  .NavMenu{ 
+      // display: none;
+       //clear:both;
+       margin: 0 auto;
+      
+      
+        li{
+          
+            float:none;
+            display:block;
+            background-color: black;
+            margin: 0 auto;
+            //padding-top: 1rem;
+            padding-bottom: 2rem;
+            text-align: right;
+            width: 100%;
+        
+        }
+       
+    } 
+    */
+  .NavMenu {
+    margin: 0 auto; }
+    .NavMenu li:nth-of-type(1n) {
+      display: none; } }
