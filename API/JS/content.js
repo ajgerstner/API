@@ -29,7 +29,7 @@ var apiData='';
 
       
          apiData +='<p id="ResultsTitle" >Results for '+search.value+'</p>';
-         apiData +='<ul class="MovieDetails">';
+         apiData +='<ul class="MovieDetails" id="MovieDetailsId">';
         
 for( var i = 0; i < responseObject.results.length; i++)
          {

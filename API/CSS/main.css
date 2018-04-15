@@ -1,4 +1,4 @@
-h1 {
+.LogoClass {
   float: left; }
 
 html {
@@ -41,7 +41,7 @@ h3 {
       width: 25rem;
       height: 35rem; }
 
-h1 {
+.LogoClass {
   margin-top: 10px;
   margin-bottom: 0; }
 
@@ -133,24 +133,37 @@ footer {
   #MenuTrigger {
     display: block;
     float: right;
-    clear: both;
     background-color: black; }
   .NavMenu.responsive {
     margin: 0 auto; }
-    .NavMenu.responsive li {
-      float: none;
-      display: block;
-      background-color: black;
-      margin: 0 auto;
-      padding-bottom: 2rem;
-      text-align: right;
-      width: 100%; }
+    .NavMenu.responsive ul {
+      padding: 0; }
+      .NavMenu.responsive ul li {
+        float: none;
+        display: block;
+        background-color: black;
+        margin: 0 auto;
+        padding-bottom: 2rem;
+        text-align: right;
+        width: 100%; }
   .NavMenu.responsive {
     margin: 0 auto; }
     .NavMenu.responsive li:nth-of-type(1n) {
       display: block; }
-  #Logo {
-    display: none; } }
+  .movieSearch.responsive {
+    display: none; }
+  .LogoClass.responsive {
+    display: none; }
+  .MovieDetails li img {
+    width: 12.5rem;
+    height: 17.5rem;
+    float: left; }
+  .MovieDetails li h2 {
+    width: 45%;
+    float: right; }
+  .MovieDetails li h3 {
+    float: right;
+    width: 45%; } }
 
 @media screen and (max-width: 600px) {
   /*  .NavMenu{ 

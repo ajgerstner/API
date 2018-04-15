@@ -62,8 +62,9 @@ h3{
 
 
 
-h1{
+.LogoClass{
    @extend %FloatLeft;
+  
    margin-top: 10px;
     margin-bottom: 0;
 }
@@ -219,7 +220,6 @@ footer{
          
          display: block;
          float: right;
-         clear: both;
          background-color: black;
       
         }
@@ -227,8 +227,9 @@ footer{
      .NavMenu.responsive{ 
       // display: none;
        //clear:both;
+        // float:right;
        margin: 0 auto;
-      
+         ul{ padding: 0;
       
         li{
           
@@ -242,6 +243,7 @@ footer{
             width: 100%;
         
         }
+         }
        
     }  
     
@@ -249,12 +251,30 @@ footer{
       margin: 0 auto;
    li:nth-of-type(1n) {display: block;}
    }
-    #Logo{
-        display: none;
-       //  float: none;
-        //justify-content: center;
-        //padding-top: 1em;
-      
+    
+    .movieSearch.responsive{
+        display:none;
+    }
+    
+    .LogoClass.responsive{
+    display: none;
+    }
+    
+    .MovieDetails{
+        li{img{
+                width:12.5rem;
+                height:17.5rem;
+            float:left;
+            }
+        h2{
+            width: 45%;
+            float: right;
+        }
+        h3{
+            float:right;
+            width: 45%;
+        }
+        }
     }
    
 }
@@ -286,6 +306,8 @@ footer{
     
     .NavMenu{ 
       margin: 0 auto;
+  
+
    li:nth-of-type(1n) {display: none;}
    }
 }
